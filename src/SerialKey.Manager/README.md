@@ -51,6 +51,7 @@ The `VerifyKey` method verifies the authenticity of the product key using an RSA
 ```
 // Create a new RSA public key instance  
 RSA publicKey = RSA.Create(); 
+
 // Import the public key parameters
 publicKey.ImportParameters(publicKeyParams); 
 
@@ -58,7 +59,8 @@ publicKey.ImportParameters(publicKeyParams);
 bool isValid = SerialKeyManager.VerifyKey(publicKey, productKey, signature);
 // True
 
-// Test with a different key string invalidKey = "ABCDE-FGHIJ-KLMNO-PQRST"; bool isInvalidKeyValid = SerialKeyManager.VerifyKey(publicKey, invalidKey, signature);
+// Test with a different key string invalidKey = "ABCDE-FGHIJ-KLMNO-PQRST"; 
+bool isInvalidKeyValid = SerialKeyManager.VerifyKey(publicKey, invalidKey, signature);
 //False
 ```
 

@@ -58,7 +58,8 @@ publicKey.ImportParameters(publicKeyParams);
 bool isValid = SerialKeyManager.VerifyKey(publicKey, productKey, signature);
 // True
 
-// Test with a different key string invalidKey = "ABCDE-FGHIJ-KLMNO-PQRST"; bool isInvalidKeyValid = SerialKeyManager.VerifyKey(publicKey, invalidKey, signature);
+// Test with a different key string invalidKey = "ABCDE-FGHIJ-KLMNO-PQRST"; 
+bool isInvalidKeyValid = SerialKeyManager.VerifyKey(publicKey, invalidKey, signature);
 //False
 ```
 
