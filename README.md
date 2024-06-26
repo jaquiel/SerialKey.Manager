@@ -63,6 +63,10 @@ bool isInvalidKeyValid = SerialKeyManager.VerifyKey(publicKey, invalidKey, signa
 //False
 ```
 
+## Mods
+
+[rus-serialkey-manager](https://github.com/jaquiel/rust-serialkey-manager)
+
 ## Contribution
 
 If you would like to contribute to the project, feel free to open an issue or submit a pull request.
